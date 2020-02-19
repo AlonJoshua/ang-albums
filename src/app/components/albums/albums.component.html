@@ -1,0 +1,13 @@
+<div>
+  <p>ANG Albums</p>
+    <div class="row">
+      <div class="col-sm-4" *ngFor="let album in albums | async">
+        <div class="card">
+         <div class="card-body">
+         <a routerLink="photos/{{album.id}}">{{album.title}}</a>
+         </div>
+        </div>
+      </div>
+    </div>
+</div>
+
